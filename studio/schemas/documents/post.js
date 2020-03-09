@@ -9,14 +9,13 @@ export default {
       name: 'title',
       type: 'string',
       title: 'Title',
-      description: 'Title of the TV-show'
+      description: 'Titles should be catchy, descriptive, and not too long monkey friend'
     },
     {
       name: 'slug',
       type: 'slug',
       title: 'Slug',
-      description:
-        'Some frontends will require a slug to be set to be able to show the post. A slug is typically what you would google to find this tv-series',
+      description: 'Some frontends will require a slug to be set to be able to show the post',
       options: {
         source: 'title',
         maxLength: 96
@@ -38,12 +37,11 @@ export default {
       type: 'excerptPortableText',
       title: 'Excerpt',
       description:
-        'This ends up on summary pages, on Google, when people share this post in social media.'
+        'This ends up on summary pages, on Google, when people share your post in social media.'
     },
     {
       name: 'authors',
-      // Following was authors, but changed to crew
-      title: 'Crew',
+      title: 'Authors',
       type: 'array',
       of: [
         {
@@ -54,8 +52,7 @@ export default {
     {
       name: 'categories',
       type: 'array',
-      // Following was Categories, but changed to genre
-      title: 'Genre',
+      title: 'Categories',
       of: [
         {
           type: 'reference',
@@ -68,8 +65,7 @@ export default {
     {
       name: 'body',
       type: 'bodyPortableText',
-      // Following was body, changed to plot
-      title: 'Plot'
+      title: 'Body'
     }
   ],
   orderings: [
